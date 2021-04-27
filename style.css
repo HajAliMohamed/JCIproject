@@ -390,6 +390,7 @@
         background-color: #0eb4dd;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
+        overflow:hidden;
     }
 
     header .nav2
@@ -756,6 +757,7 @@
         background-color: #0eb4dd;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
+        overflow:hidden;
     }
 
     header .nav2
@@ -1125,6 +1127,7 @@
         background-color: #0eb4dd;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
+        overflow:hidden;
     }
 
     header .nav2
@@ -1537,6 +1540,7 @@
         background-color: #0eb4dd;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
+        overflow:hidden;
     }
 
     header .nav2

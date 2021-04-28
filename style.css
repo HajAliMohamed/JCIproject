@@ -2486,12 +2486,12 @@
 
       .Activités .fdiv .card1
       {
-        width: 54%;
+        width: 65%;
         margin-top: 41px;
         border-radius: 30px;
           box-shadow: 0px 0px 20px -5px black;
           border-bottom: 5px solid #db7137;
-          height: 132px;
+          height: 173px;
           transition: 0.5s linear;
       }
 

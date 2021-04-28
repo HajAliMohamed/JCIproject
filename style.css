@@ -11,6 +11,7 @@
 
 #loading
 {
+    overflow:hidden ;
     width: 100%;
     height: 100%;
     top: 0;
@@ -66,10 +67,7 @@
     }
   }
 
-
-
-
-@media only screen and (min-width: 1201px)and (max-width: 3080px)
+@media only screen and (min-width: 1201px)and (max-width: 1440px)
 {
 
         header
@@ -77,7 +75,6 @@
             background-color: #0eb4dd;
             background-image: url(images/bg-hero-desktop.svg);
             background-repeat: no-repeat;
-            overflow:hidden;
         }
 
         header .nav2
@@ -200,23 +197,30 @@
             font-family: 'PT Sans', sans-serif;
             font-size: 45px;
             text-align: center;
-            margin-top: 105px;
+            margin-top: 232px;
          }
 
-
-         main .about
+         main .about 
          {
-            background-color: white;
+             display:flex;
+             flex-direction: column;
+             align-items: center;
+             background-color: white;
+             width: 91%;
+             margin: 50px auto;
+             border-radius: 50px;
+             box-shadow: 1px 3px 13px -4px black;
+         }
+
+         main .about .firstdiv
+         {
+            
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            width: 91%;
-            margin: 50px auto;
-            border-radius: 50px;
-            box-shadow: 1px 3px 13px -4px black;
         
          }
 
-         main .about .img1
+         main .about .firstdiv .img1
          {
             width: 96%;
             order: 2;
@@ -224,19 +228,19 @@
             margin: 115px auto;
          }
 
-         main .about .article1
+         main .about .firstdiv .article1
          {
             width: 80%;
             margin: 50px auto;
          }
 
-         main .about .article1 img
+         main .about .firstdiv .article1 img
          {
              width: 40%;
              margin: 30px auto;
          }
 
-         main .about .article1 p
+         main .about .firstdiv .article1 p
          {
             color: #0eb4dd;
             font-size: 24px;
@@ -249,25 +253,64 @@
      
          .Activités{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-image: url(images/bg-hero-desktop.svg);
             background-repeat: no-repeat;
             background-size: 100%;
           }
+
+          .Activités .fdiv
+          {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+          }
+
+
+          .Activités .fdiv .card1
+          {
+            width: 32%;
+            margin-top: 142px;
+            border-radius: 30px;
+              box-shadow: 0px 0px 20px -5px black;
+              border-bottom: 5px solid #db7137;
+              height: 312px;
+              transition: 0.5s linear;
+          }
+
+          .Activités .fdiv .card1:hover
+          {
+            box-shadow: 0px 0px 35px -5px black;
+          }
+
+          main .fdiv .card1 a img
+          {
+              width: 100%;
+              border-radius: 20px;
+              height: 100%;
+          }
+
+          main .about .seconddiv
+          {
+              width: 100%;
+          }
           
-          .img-slider{
+          main .about .seconddiv .img-slider{
             position: relative;
-            width: 70%;
-            height: 494px;
-            margin: 86px;
+            width: 90%;
+            height: 519px;
+            margin: 86px auto;
             overflow: hidden;
             border-radius: 20px;
             box-shadow: 0px 3px 23px -4px black;
             transition: .6s linear;
           }
           
-          .img-slider .slide{
+          main .about .seconddiv .img-slider .slide{
             z-index: 1;
             position: absolute;
             width: 100%;
@@ -275,18 +318,18 @@
             height: 100%;
           }
           
-          .img-slider .slide.active{
+          main .about .seconddiv .img-slider .slide.active{
             clip-path: circle(150% at 0 50%);
             transition: 2s;
             transition-property: clip-path;
           }
 
-          .img-slider:hover{
+          main .about .seconddiv .img-slider:hover{
               transform: scale(1.2,1.2);
               cursor: pointer;
           }
           
-          .img-slider .slide a img{
+          main .about .seconddiv .img-slider .slide a img{
             z-index: 1;
             width: 100%;
             border-radius: 5px;
@@ -294,7 +337,7 @@
           }
           
           
-          .img-slider .navigation{
+          main .about .seconddiv .img-slider .navigation{
             z-index: 2;
             position: absolute;
             display: flex;
@@ -303,7 +346,7 @@
             transform: translateX(-50%);
           }
           
-          .img-slider .navigation .btn{
+          main .about .seconddiv .img-slider .navigation .btn{
             background: #2696E9;
             width: 12px;
             height: 12px;
@@ -312,7 +355,7 @@
             cursor: pointer;
           }
           
-          .img-slider .navigation .btn.active{
+          main .about .seconddiv .img-slider .navigation .btn.active{
             background: #f37123;
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
           }
@@ -446,7 +489,6 @@
         background-color: #0eb4dd;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
-        overflow:hidden;
     }
 
     header .nav2
@@ -572,40 +614,46 @@
         margin-top: 105px;
      }
 
-
-     main .about
+     main .about 
      {
-        background-color: white;
+         display:flex;
+         flex-direction: column;
+         align-items: center;
+         background-color: white;
+         width: 91%;
+         margin: 50px auto;
+         border-radius: 50px;
+         box-shadow: 1px 3px 13px -4px black;
+     }
+
+
+     main .about .firstdiv
+     {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        width: 91%;
-        margin: 50px auto;
-        border-radius: 50px;
-        box-shadow: 1px 3px 13px -4px black;
     
      }
 
-     main .about .img1
+     main .about .firstdiv .img1
      {
-        width: 96%;
+        width: 100%;
         order: 2;
-        padding: 10px;
-        margin: 115px auto;
+        margin: 223px auto;
      }
 
-     main .about .article1
+     main .about .firstdiv .article1
      {
-        width: 80%;
+        width: 90%;
         margin: 50px auto;
      }
 
-     main .about .article1 img
+     main .about .firstdiv .article1 img
      {
          width: 40%;
          margin: 30px auto;
      }
 
-     main .about .article1 p
+     main .about .firstdiv .article1 p
      {
         color: #0eb4dd;
         font-size: 24px;
@@ -618,25 +666,64 @@
  
      .Activités{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
         background-size: 100%;
       }
+
+      .Activités .fdiv
+      {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+      }
+
+
+      .Activités .fdiv .card1
+      {
+        width: 32%;
+        margin-top: 142px;
+        border-radius: 30px;
+          box-shadow: 0px 0px 20px -5px black;
+          border-bottom: 5px solid #db7137;
+          height: 312px;
+          transition: 0.5s linear;
+      }
+
+      .Activités .fdiv .card1:hover
+      {
+        box-shadow: 0px 0px 35px -5px black;
+      }
+
+      main .fdiv .card1 a img
+      {
+          width: 100%;
+          border-radius: 27px;
+          height: 100%;
+      }
+
+      main .about .seconddiv
+      {
+          width: 100%;
+      }
       
-      .img-slider{
+      main .about .seconddiv .img-slider{
         position: relative;
-        width: 70%;
-        height: 494px;
-        margin: 86px;
+        width: 90%;
+        height: 465px;
+        margin: 86px auto ;
         overflow: hidden;
         border-radius: 20px;
         box-shadow: 0px 3px 23px -4px black;
         transition: .6s linear;
       }
       
-      .img-slider .slide{
+      main .about .seconddiv .img-slider .slide{
         z-index: 1;
         position: absolute;
         width: 100%;
@@ -644,18 +731,18 @@
         height: 100%;
       }
       
-      .img-slider .slide.active{
+      main .about .seconddiv .img-slider .slide.active{
         clip-path: circle(150% at 0 50%);
         transition: 2s;
         transition-property: clip-path;
       }
 
-      .img-slider:hover{
+      main .about .seconddiv .img-slider:hover{
           transform: scale(1.1);
           cursor: pointer;
       }
       
-      .img-slider .slide a img{
+      main .about .seconddiv .img-slider .slide a img{
         z-index: 1;
         width: 100%;
         border-radius: 5px;
@@ -663,7 +750,7 @@
       }
       
       
-      .img-slider .navigation{
+      main .about .seconddiv .img-slider .navigation{
         z-index: 2;
         position: absolute;
         display: flex;
@@ -672,7 +759,7 @@
         transform: translateX(-50%);
       }
       
-      .img-slider .navigation .btn{
+      main .about .seconddiv .img-slider .navigation .btn{
         background: #2696E9;
         width: 12px;
         height: 12px;
@@ -681,7 +768,7 @@
         cursor: pointer;
       }
       
-      .img-slider .navigation .btn.active{
+     main .about .seconddiv .img-slider .navigation .btn.active{
         background: #f37123;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       }
@@ -813,7 +900,6 @@
         background-color: #0eb4dd;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
-        overflow:hidden;
     }
 
     header .nav2
@@ -939,28 +1025,35 @@
         margin-top: 105px;
      }
 
-
-     main .about
+     main .about 
      {
-        background-color: white;
+         display:flex;
+         flex-direction: column;
+         align-items: center;
+         background-color: white;
+         width: 91%;
+         margin: 50px auto;
+         border-radius: 50px;
+         box-shadow: 1px 3px 13px -4px black;
+     }
+
+
+     main .about .firstdiv
+     {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 91%;
-        margin: 50px auto;
-        border-radius: 50px;
-        box-shadow: 1px 3px 13px -4px black;
     
      }
 
-     main .about .img1
+     main .about .firstdiv .img1
      {
         width: 77%;
         margin: 33px auto;
      }
 
-     main .about .article1
+     main .about .firstdiv .article1
      {
         width: 80%;
         margin: 50px auto;
@@ -969,13 +1062,13 @@
         align-items: center;
      }
 
-     main .about .article1 img
+     main .about .firstdiv .article1 img
      {
          width: 40%;
          margin: 30px auto;
      }
 
-     main .about .article1 p
+     main .about .firstdiv .article1 p
      {
         color: #0eb4dd;
         font-size: 24px;
@@ -988,25 +1081,64 @@
  
      .Activités{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
         background-size: 100%;
       }
+
+      .Activités .fdiv
+      {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+      }
+
+
+      .Activités .fdiv .card1
+      {
+        width: 32%;
+        margin-top: 142px;
+        border-radius: 30px;
+          box-shadow: 0px 0px 20px -5px black;
+          border-bottom: 5px solid #db7137;
+          height: 312px;
+          transition: 0.5s linear;
+      }
+
+      .Activités .fdiv .card1:hover
+      {
+        box-shadow: 0px 0px 35px -5px black;
+      }
+
+      main .fdiv .card1 a img
+      {
+          width: 100%;
+          border-radius: 27px;
+          height: 100%;
+      }
+
+      main .about .seconddiv
+      {
+          width: 100%;
+      }
       
-      .img-slider{
+      main .about .seconddiv .img-slider{
         position: relative;
-        width: 70%;
-        height: 494px;
-        margin: 86px;
+        width: 90%;
+        height: 465px;
+        margin: 86px auto;
         overflow: hidden;
         border-radius: 20px;
         box-shadow: 0px 3px 23px -4px black;
         transition: .6s linear;
       }
       
-      .img-slider .slide{
+      main .about .seconddiv .img-slider .slide{
         z-index: 1;
         position: absolute;
         width: 100%;
@@ -1014,18 +1146,18 @@
         height: 100%;
       }
       
-      .img-slider .slide.active{
+      main .about .seconddiv .img-slider .slide.active{
         clip-path: circle(150% at 0 50%);
         transition: 2s;
         transition-property: clip-path;
       }
 
-      .img-slider:hover{
+      main .about .seconddiv .img-slider:hover{
           transform: scale(1.1);
           cursor: pointer;
       }
       
-      .img-slider .slide a img{
+      main .about .seconddiv .img-slider .slide a img{
         z-index: 1;
         width: 100%;
         border-radius: 5px;
@@ -1033,7 +1165,7 @@
       }
       
       
-      .img-slider .navigation{
+      main .about .seconddiv .img-slider .navigation{
         z-index: 2;
         position: absolute;
         display: flex;
@@ -1042,7 +1174,7 @@
         transform: translateX(-50%);
       }
       
-      .img-slider .navigation .btn{
+      main .about .seconddiv .img-slider .navigation .btn{
         background: #2696E9;
         width: 12px;
         height: 12px;
@@ -1051,7 +1183,7 @@
         cursor: pointer;
       }
       
-      .img-slider .navigation .btn.active{
+      main .about .seconddiv .img-slider .navigation .btn.active{
         background: #f37123;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       }
@@ -1183,7 +1315,6 @@
         background-color: #0eb4dd;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
-        overflow:hidden;
     }
 
     header .nav2
@@ -1366,13 +1497,22 @@
     
      }
 
-     main .about .img1
+     main .about .firstdiv
+     {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+     }
+
+     main .about .firstdiv .img1
      {
         width: 77%;
         margin: 33px auto;
      }
 
-     main .about .article1
+     main .about .firstdiv .article1
      {
         width: 80%;
         margin: 50px auto;
@@ -1381,13 +1521,13 @@
         align-items: center;
      }
 
-     main .about .article1 img
+     main .about .firstdiv .article1 img
      {
          width: 52%;
          margin: 30px auto;
      }
 
-     main .about .article1 p
+     main .about .firstdiv .article1 p
      {
         color: #0eb4dd;
         font-size: 24px;
@@ -1400,14 +1540,55 @@
  
      .Activités{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
         background-size: 100%;
       }
+
+      .Activités .fdiv
+      {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+      }
+
+
+      .Activités .fdiv .card1
+      {
+        width: 31%;
+        margin-top: 79px;
+        border-radius: 30px;
+          box-shadow: 0px 0px 20px -5px black;
+          border-bottom: 5px solid #db7137;
+          height: 158px;
+          transition: 0.5s linear;
+      }
+
+      .Activités .fdiv .card1:hover
+      {
+        box-shadow: 0px 0px 35px -5px black;
+      }
+
+      main .fdiv .card1 a img
+      {
+          width: 100%;
+          border-radius: 27px;
+          height: 100%;
+      }
       
-      .img-slider{
+
+      
+      main .about .seconddiv
+      {
+          width: 100%;
+      }
+
+      main .about .seconddiv .img-slider{
         position: relative;
         width: 91%;
         height: 355px;
@@ -1415,10 +1596,12 @@
         border-radius: 20px;
         box-shadow: 0px 3px 23px -4px black;
         transition: .6s linear;
-        margin-top: 83px;
+        margin: 50px auto;
       }
+
+
       
-      .img-slider .slide{
+      main .about .seconddiv .img-slider .slide{
         z-index: 1;
         position: absolute;
         width: 100%;
@@ -1426,18 +1609,18 @@
         height: 100%;
       }
       
-      .img-slider .slide.active{
+      main .about .seconddiv .img-slider .slide.active{
         clip-path: circle(150% at 0 50%);
         transition: 2s;
         transition-property: clip-path;
       }
 
-      .img-slider:hover{
+      main .about .seconddiv .img-slider:hover{
           transform: scale(1.1);
           cursor: pointer;
       }
       
-      .img-slider .slide a img{
+      main .about .seconddiv .img-slider .slide a img{
         z-index: 1;
         width: 100%;
         border-radius: 5px;
@@ -1445,7 +1628,7 @@
       }
       
       
-      .img-slider .navigation{
+      main .about .seconddiv .img-slider .navigation{
         z-index: 2;
         position: absolute;
         display: flex;
@@ -1454,7 +1637,7 @@
         transform: translateX(-50%);
       }
       
-      .img-slider .navigation .btn{
+      main .about .seconddiv .img-slider .navigation .btn{
         background: #2696E9;
         width: 12px;
         height: 12px;
@@ -1463,7 +1646,7 @@
         cursor: pointer;
       }
       
-      .img-slider .navigation .btn.active{
+      main .about .seconddiv .img-slider .navigation .btn.active{
         background: #f37123;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       }
@@ -1596,7 +1779,6 @@
         background-color: #0eb4dd;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
-        overflow:hidden;
     }
 
     header .nav2
@@ -1779,13 +1961,22 @@
     
      }
 
-     main .about .img1
+     main .about .firstdiv
+     {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+     }
+
+     main .about .firstdiv .img1
      {
         width: 77%;
         margin: 33px auto;
      }
 
-     main .about .article1
+     main .about .firstdiv .article1
      {
         width: 80%;
         margin: 50px auto;
@@ -1794,13 +1985,13 @@
         align-items: center;
      }
 
-     main .about .article1 img
+     main .about .firstdiv .article1 img
      {
          width: 52%;
          margin: 30px auto;
      }
 
-     main .about .article1 p
+     main .about .firstdiv .article1 p
      {
         color: #0eb4dd;
         font-size: 24px;
@@ -1813,14 +2004,55 @@
  
      .Activités{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
         background-size: 100%;
       }
+
+      .Activités .fdiv
+      {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+
+
+      .Activités .fdiv .card1
+      {
+        width: 31%;
+        margin-top: 79px;
+        border-radius: 30px;
+          box-shadow: 0px 0px 20px -5px black;
+          border-bottom: 5px solid #db7137;
+          height: 158px;
+          transition: 0.5s linear;
+      }
+
+      .Activités .fdiv .card1:hover
+      {
+        box-shadow: 0px 0px 35px -5px black;
+      }
+
+      main .fdiv .card1 a img
+      {
+          width: 100%;
+          border-radius: 27px;
+          height: 100%;
+      }
+
+      main .about .seconddiv
+      {
+          width: 100%;
+      }
+
       
-      .img-slider{
+      main .about .seconddiv .img-slider{
         position: relative;
         width: 91%;
         height: 355px;
@@ -1828,10 +2060,10 @@
         border-radius: 20px;
         box-shadow: 0px 3px 23px -4px black;
         transition: .6s linear;
-        margin-top: 83px;
+        margin: 50px auto;
       }
       
-      .img-slider .slide{
+      main .about .seconddiv .img-slider .slide{
         z-index: 1;
         position: absolute;
         width: 100%;
@@ -1839,18 +2071,18 @@
         height: 100%;
       }
       
-      .img-slider .slide.active{
+      main .about .seconddiv .img-slider .slide.active{
         clip-path: circle(150% at 0 50%);
         transition: 2s;
         transition-property: clip-path;
       }
 
-      .img-slider:hover{
+      main .about .seconddiv .img-slider:hover{
           transform: scale(1.1);
           cursor: pointer;
       }
       
-      .img-slider .slide a img{
+      main .about .seconddiv .img-slider .slide a img{
         z-index: 1;
         width: 100%;
         border-radius: 5px;
@@ -1858,7 +2090,7 @@
       }
       
       
-      .img-slider .navigation{
+      main .about .seconddiv .img-slider .navigation{
         z-index: 2;
         position: absolute;
         display: flex;
@@ -1867,7 +2099,7 @@
         transform: translateX(-50%);
       }
       
-      .img-slider .navigation .btn{
+      main .about .seconddiv .img-slider .navigation .btn{
         background: #2696E9;
         width: 12px;
         height: 12px;
@@ -1876,7 +2108,7 @@
         cursor: pointer;
       }
       
-      .img-slider .navigation .btn.active{
+      main .about .seconddiv .img-slider .navigation .btn.active{
         background: #f37123;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       }
@@ -2010,7 +2242,6 @@
         background-color: #0eb4dd;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
-        overflow:hidden;
     }
 
     header .nav2
@@ -2193,13 +2424,22 @@
     
      }
 
-     main .about .img1
+     main .about .firstdiv
+     {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+     }
+
+     main .about .firstdiv .img1
      {
         width: 85%;
         margin: 33px auto;
      }
 
-     main .about .article1
+     main .about .firstdiv .article1
      {
         width: 80%;
         margin: 50px auto;
@@ -2208,13 +2448,13 @@
         align-items: center;
      }
 
-     main .about .article1 img
+     main .about .firstdiv .article1 img
      {
          width: 76%;
          margin: 30px auto;
      }
 
-     main .about .article1 p
+     main .about .firstdiv .article1 p
      {
         color: #0eb4dd;
         font-size: 24px;
@@ -2226,25 +2466,64 @@
  
      .Activités{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-image: url(images/bg-hero-desktop.svg);
         background-repeat: no-repeat;
         background-size: 100%;
       }
+
+      .Activités .fdiv
+      {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+
+      .Activités .fdiv .card1
+      {
+        width: 54%;
+        margin-top: 41px;
+        border-radius: 30px;
+          box-shadow: 0px 0px 20px -5px black;
+          border-bottom: 5px solid #db7137;
+          height: 132px;
+          transition: 0.5s linear;
+      }
+
+      .Activités .fdiv .card1:hover
+      {
+        box-shadow: 0px 0px 35px -5px black;
+      }
+
+      main .fdiv .card1 a img
+      {
+          width: 100%;
+          border-radius: 27px;
+          height: 100%;
+      }
+
+      main .about .seconddiv
+      {
+          width: 100%;
+      }
       
       .img-slider{
         position: relative;
-        width: 96%;
-        height: 226px;
+        width: 90%;
+        height: 207px;
         overflow: hidden;
         border-radius: 20px;
         box-shadow: 0px 3px 23px -4px black;
         transition: .6s linear;
-        margin-top: 83px;
+        margin: 50px auto;
       }
       
-      .img-slider .slide{
+      main .about .seconddiv .img-slider .slide{
         z-index: 1;
         position: absolute;
         width: 100%;
@@ -2252,18 +2531,18 @@
         height: 100%;
       }
       
-      .img-slider .slide.active{
+      main .about .seconddiv .img-slider .slide.active{
         clip-path: circle(150% at 0 50%);
         transition: 2s;
         transition-property: clip-path;
       }
 
-      .img-slider:hover{
+      main .about .seconddiv .img-slider:hover{
           transform: scale(1.1);
           cursor: pointer;
       }
       
-      .img-slider .slide a img{
+      main .about .seconddiv .img-slider .slide a img{
         z-index: 1;
         width: 100%;
         border-radius: 5px;
@@ -2271,7 +2550,7 @@
       }
       
       
-      .img-slider .navigation{
+      main .about .seconddiv .img-slider .navigation{
         z-index: 2;
         position: absolute;
         display: flex;
@@ -2280,7 +2559,7 @@
         transform: translateX(-50%);
       }
       
-      .img-slider .navigation .btn{
+      main .about .seconddiv .img-slider .navigation .btn{
         background: #2696E9;
         width: 12px;
         height: 12px;
@@ -2289,7 +2568,7 @@
         cursor: pointer;
       }
       
-      .img-slider .navigation .btn.active{
+      main .about .seconddiv .img-slider .navigation .btn.active{
         background: #f37123;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       }
@@ -2308,7 +2587,7 @@
 
       main .members .card1 
       {
-          width: 54%;
+          width: 72%;
           margin-top: 130px;
           border-radius: 30px;
             box-shadow: 0px 0px 20px -5px black;
@@ -2320,11 +2599,12 @@
           display:flex;
           flex-direction: row;
           justify-content: space-around;
+          flex-wrap: wrap;
       }
 
       main .members .container1 .card1 
       {
-        width: 44%;
+        width: 46%;
         margin-top: 109px;
         border-radius: 30px;
         box-shadow: 0px 0px 20px -5px black;
